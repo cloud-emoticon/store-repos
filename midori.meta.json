@@ -1,0 +1,12 @@
+{
+    "name": "Midori",
+    "location": {
+        "type": "local"
+    },
+    "description": "Midori",
+    "author": {
+        "name": "Midori Yakumo",
+        "url": "https://twitter.com/MidoriYakumo",
+        "avatarUrl": "https://pbs.twimg.com/profile_images/451274096743964672/M5_bDVp7_400x400.png"
+    }
+}
