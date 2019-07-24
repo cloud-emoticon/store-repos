@@ -1,0 +1,12 @@
+{
+    "name": "CIA",
+    "location": {
+        "type": "local"
+    },
+    "description": "What the CIA uses",
+    "author": {
+        "name": "KTachibanaM",
+        "url": "https://twitter.com/KTachibana_M",
+        "avatarUrl": "https://pbs.twimg.com/profile_images/1147528693792722944/O1eqCdwT_400x400.jpg"
+    }
+}
