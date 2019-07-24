@@ -1,7 +1,7 @@
 {
     "name": "CIA",
     "location": {
-        "type": "local"
+        "type": "localJson"
     },
     "description": "What the CIA uses",
     "author": {

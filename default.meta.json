@@ -1,7 +1,7 @@
 {
     "name": "KT's favorites",
     "location": {
-        "type": "local"
+        "type": "localJson"
     },
     "description": "KT's favorites. What comes default by Cloud Emoticon Android.",
     "author": {

@@ -1,7 +1,7 @@
 {
     "name": "Midori",
     "location": {
-        "type": "local"
+        "type": "localXml"
     },
     "description": "Midori",
     "author": {
