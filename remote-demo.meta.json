@@ -1,0 +1,13 @@
+{
+    "name": "Remote repo demo",
+    "location": {
+        "type": "remoteJson",
+        "remoteUrl": "http://www.ktachibana.party/cloudemoticon/remote-demo.json"
+    },
+    "description": "A demo to show how to host a repo not on https://github.com/cloud-emoticon/store-repos\nIt will still have the same content as 'KT's favorites'",
+    "author": {
+        "name": "KTachibanaM",
+        "url": "https://twitter.com/KTachibana_M",
+        "avatarUrl": "https://pbs.twimg.com/profile_images/1147528693792722944/O1eqCdwT_400x400.jpg"
+    }
+}
