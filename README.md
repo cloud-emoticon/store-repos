@@ -1,6 +1,8 @@
 # store-repos
 
-The Store
+[![Build Status](https://travis-ci.org/cloud-emoticon/store-repos.svg?branch=master)](https://travis-ci.org/cloud-emoticon/store-repos)
+
+The repository store, revived on GitHub
 
 ## Repository requirements
 
