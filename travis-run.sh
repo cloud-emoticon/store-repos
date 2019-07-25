@@ -1,1 +1,3 @@
-cd linter && yarn run-linter
+pushd linter
+yarn run-linter
+popd

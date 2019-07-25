@@ -1,1 +1,4 @@
-cd linter && yarn install && yarn build-ts
+pushd linter
+yarn install
+yarn build-ts
+popd
