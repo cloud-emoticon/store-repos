@@ -1,0 +1,16 @@
+{
+  "information": [
+    "An example good local JSON repo"
+  ],
+  "categories": [
+    {
+      "name": "cat1",
+      "entries": [
+        {
+          "emoticon": "emot",
+          "description": "desc"
+        }
+      ]
+    }
+  ]
+}
