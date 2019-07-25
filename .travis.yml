@@ -1,3 +1,5 @@
 language: node_js
-install: cd linter && yarn build-ts
-script: cd linter && yarn run-linter
+before_install: cd linter
+install: yarn build-ts
+before_script: cd linter
+script: yarn run-linter
