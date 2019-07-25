@@ -1,5 +1,5 @@
 language: node_js
 before_install: cd linter
-install: ./install.sh
+install: bash install.sh
 before_script: cd linter
 script: yarn run-linter
