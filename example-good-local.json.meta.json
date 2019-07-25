@@ -1,0 +1,12 @@
+{
+    "name": "Example good local JSON repo",
+    "location": {
+        "type": "localJson"
+    },
+    "description": "An example good local JSON repo",
+    "author": {
+        "name": "KTachibanaM",
+        "url": "https://twitter.com/KTachibana_M",
+        "avatarUrl": "https://pbs.twimg.com/profile_images/1147528693792722944/O1eqCdwT_400x400.jpg"
+    }
+}
