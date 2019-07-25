@@ -1,0 +1,19 @@
+{
+  "name": "store-repos-linter",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "KTachibanaM",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build-ts": "tsc",
+    "run-linter": "node dist/index.js"
+  },
+  "devDependencies": {
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.8"
+  }
+}
