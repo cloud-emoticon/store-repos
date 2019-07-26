@@ -1,5 +1,10 @@
 import * as fs from 'fs'
 import * as process from "process"
+import Ajv from "ajv"
+import JsonRepositorySchema from "./api/JsonRepositorySchema"
+
+const ajv = new Ajv()
+const validateJsonRepository = ajv.compile(JsonRepositorySchema)
 
 for (let path of fs.readdirSync('..')) {
     if (path.endsWith(".meta.json")) {
@@ -28,10 +33,25 @@ for (let path of fs.readdirSync('..')) {
             process.exit(42)
         }
         const possibleLocalFilename = path.substring(0, path.length - ".meta.json".length)
-        if (meta["location"]["type"] === "localJson" && !fs.existsSync(`../${possibleLocalFilename}.json`)) {
-            // TODO: validate json as well
-            console.error(`cannot find local json for meta file ${path}`)
-            process.exit(42)
+        if (meta["location"]["type"] === "localJson") {
+            const localJsonFilename = `../${possibleLocalFilename}.json`
+            if (!fs.existsSync(localJsonFilename)) {
+                console.error(`cannot find local json for meta file ${path}`)
+                process.exit(42)
+            }
+            const localJsonString = fs.readFileSync(localJsonFilename, 'utf-8')
+            let localJson
+            try {
+                localJson = JSON.parse(localJsonString)
+            } catch (e) {
+                console.error(`fail to parse local json file ${localJsonFilename}`)
+                process.exit(42)
+            }
+            if (!validateJsonRepository(localJson)) {
+                console.error(`fail to validate local json file ${localJsonFilename}`)
+                console.error(validateJsonRepository.errors)
+                process.exit(42)
+            }
         }
         if (meta["location"]["type"] === "localXml" && !fs.existsSync(`../${possibleLocalFilename}.xml`)) {
             // TODO: validate xml as well
