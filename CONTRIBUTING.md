@@ -21,4 +21,4 @@ Let's get started
 4. If you decide to host your repository on your own server
     1. Metadata JSON file should still follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/RepositoryMetadata.ts). Don't worry about TypeScript, the interface alone should be easy to follow. If you are still not sure, look at [this example](https://github.com/cloud-emoticon/store-repos/blob/master/remote-demo.meta.json)
 5. Push the branch, create a merge request to this repo's master. There is a CI bot to check the integrity of the JSON files. Please assign the reviewer to `KTachibanaM`(me).
-6. Wait for review, merge, and profit :P
+6. Wait for review, merge, wait for about 5 minutes for your repository to appear in the store, and profit :P
