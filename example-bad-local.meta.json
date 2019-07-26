@@ -1,0 +1,8 @@
+{
+    "name": "Example bad local json repo",
+    "location": {
+        "type": "localJson"
+    },
+    "description": "An example of a bad local json repo because it's missing author and has some faults in the repo file itself",
+    "author": {}
+}
