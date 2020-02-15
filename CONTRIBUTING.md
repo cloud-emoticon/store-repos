@@ -20,5 +20,6 @@ Let's get started
     3. Repository JSON file should follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/JsonRepository.ts). Again, no worries on TypeScript. Here is [an example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.json).
 4. If you decide to host your repository on your own server
     1. Metadata JSON file should still follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/RepositoryMetadata.ts). Don't worry about TypeScript, the interface alone should be easy to follow. If you are still not sure, look at [this example](https://github.com/cloud-emoticon/store-repos/blob/master/remote-demo.meta.json)
-5. Push the branch, create a merge request to this repo's master. There is a CI bot to check the integrity of the JSON files. Please assign the reviewer to `KTachibanaM`(me).
-6. Wait for review, merge, wait for about 5 minutes for your repository to appear in the store, and profit :P
+5. You can optinoally add an avatar for author of your repo to the branch. See exmaple in `a-land.meta.json`.
+6. Push the branch, create a merge request to this repo's master. There is a CI bot to check the integrity of the JSON files. Please assign the reviewer to `KTachibanaM`(me).
+7. Wait for review, merge, wait for about 5 minutes for your repository to appear in the store, and profit :P
