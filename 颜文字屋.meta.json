@@ -1,0 +1,12 @@
+{
+    "name": "颜文字屋",
+    "location": {
+        "type": "localXml"
+    },
+    "description": "kaomojiya.com transformed by wicast",
+    "author": {
+        "name": "wicast chen",
+        "url": "https://twitter.com/wicastchen",
+        "avatarUrl": "https://pbs.twimg.com/profile_images/661817830833197056/dS9X1_Aw_400x400.jpg"
+    }
+}

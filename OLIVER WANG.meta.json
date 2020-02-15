@@ -1,0 +1,12 @@
+{
+    "name": "Oliver Wang",
+    "location": {
+        "type": "localXml"
+    },
+    "description": "Oliver Wang",
+    "author": {
+        "name": "Oliver Wang",
+        "url": "https://twitter.com/Toohashi",
+        "avatarUrl": "https://pbs.twimg.com/profile_images/934622661900042240/3xx0eL4z_400x400.jpg"
+    }
+}
