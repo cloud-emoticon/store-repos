@@ -1,0 +1,12 @@
+{
+    "name": "Yashi's favorites",
+    "location": {
+        "type": "localXml"
+    },
+    "description": "Yashi's favorites. What comes default by Cloud Emoticon 1 for iOS.",
+    "author": {
+        "name": "神楽坂雅詩",
+        "url": "https://twitter.com/kagurazakayashi",
+        "avatarUrl": "https://pbs.twimg.com/profile_images/1148953542708744194/kvp_Md3I_400x400.png"
+    }
+}
