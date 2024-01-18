@@ -2,8 +2,10 @@
 export interface RepositoryMetadata {
     name: string,
     location: {
-        type: "localJson" | "localXml" | "remoteJson",
-        remoteUrl?: string
+        type: "localJson" | "localXml"
+    } | {
+        type: "remoteJson",
+        remoteUrl: string
     },
     description: string,
     author: {
