@@ -1,8 +1,10 @@
 import * as fs from 'fs'
 import * as process from "process"
 import Ajv from "ajv"
-import JsonRepositorySchema from "./api/JsonRepositorySchema"
-import RepositoryMetadataSchema from "./api/RepositoryMetadataSchema"
+import toJsonSchema from "./lib/toJsonSchema"
+
+const JsonRepositorySchema = toJsonSchema("./src/api/JsonRepository.ts", "JsonRepository")
+const RepositoryMetadataSchema = toJsonSchema("./src/api/RepositoryMetadata.ts", "RepositoryMetadata")
 
 const ajv = new Ajv()
 const validateJsonRepository = ajv.compile(JsonRepositorySchema)
