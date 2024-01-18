@@ -23,7 +23,7 @@ Let's get started
         ```
 
     2. Create a JSON file for your actual repository in JSON format (sorry no XML). Name the file to have the same name as the repository metadata JSON file, e.g. if your metadata JSON file is named `foo.meta.json`, this file should be named `foo.json`
-    3. Repository JSON file should follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/JsonRepository.ts). Again, no worries on TypeScript. Here is [an example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.json).should be easy to follow. If you are still not sure, look at [this example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.meta.json)
+    3. Repository JSON file should follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/JsonRepository.ts). Again, no worries on TypeScript. Here is [an example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.json).should be easy to follow. If you are still not sure, look at [this example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.json)
         1. Bonus: If your editor supports JSON schema, add the following line to aid you:
 
         ```
