@@ -1,4 +1,5 @@
 {
+    "$schema": "https://github.com/cloud-emoticon/store-repos/raw/master/schema/RepositoryMetadata.json",
     "name": "A岛颜文字汇集",
     "location": {
         "type": "localXml"
