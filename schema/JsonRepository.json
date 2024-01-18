@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "information": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "categories": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "entries": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "emoticon": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "description",
+                                "emoticon"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "entries",
+                    "name"
+                ]
+            }
+        }
+    },
+    "required": [
+        "categories",
+        "information"
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#"
+}

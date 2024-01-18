@@ -8,7 +8,9 @@
   "scripts": {
     "build-ts": "tsc",
     "prerun-linter": "yarn run build-ts",
-    "run-linter": "node dist/index.js"
+    "run-linter": "node dist/index.js",
+    "pregen-schema": "yarn run build-ts",
+    "gen-schema": "node dist/bin/genSchema.js"
   },
   "devDependencies": {
     "tslint": "^5.18.0",

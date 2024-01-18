@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "location": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "localJson",
+                        "localXml",
+                        "remoteJson"
+                    ],
+                    "type": "string"
+                },
+                "remoteUrl": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type"
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "author": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "avatarUrl": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        }
+    },
+    "required": [
+        "author",
+        "description",
+        "location",
+        "name"
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#"
+}
