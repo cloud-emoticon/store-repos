@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - "12"
-cache:
-  yarn: true
-  directories:
-  - $HOME/.yarn-cache
-install: bash travis-install.sh
-script: bash travis-run.sh
