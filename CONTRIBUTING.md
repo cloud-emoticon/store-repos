@@ -16,10 +16,28 @@ Let's get started
 2. Create a JSON file for your repository metadata. End its filename with `.meta.json`, for example, `foo.meta.json`
 3. If you decide to host your repository on this GitHub repo
     1. Metadata JSON file should follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/RepositoryMetadata.ts). Don't worry about TypeScript, the interface alone should be easy to follow. If you are still not sure, look at [this example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.meta.json)
+        1. Bonus: If your editor supports JSON schema, add the following line to aid you:
+
+        ```
+        "$schema": "https://github.com/cloud-emoticon/store-repos/raw/master/schema/RepositoryMetadata.json",
+        ```
+
     2. Create a JSON file for your actual repository in JSON format (sorry no XML). Name the file to have the same name as the repository metadata JSON file, e.g. if your metadata JSON file is named `foo.meta.json`, this file should be named `foo.json`
-    3. Repository JSON file should follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/JsonRepository.ts). Again, no worries on TypeScript. Here is [an example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.json).
+    3. Repository JSON file should follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/JsonRepository.ts). Again, no worries on TypeScript. Here is [an example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.json).should be easy to follow. If you are still not sure, look at [this example](https://github.com/cloud-emoticon/store-repos/blob/master/kt-favorites.json)
+        1. Bonus: If your editor supports JSON schema, add the following line to aid you:
+
+        ```
+        "$schema": "https://github.com/cloud-emoticon/store-repos/raw/master/schema/JsonRepository.json",
+        ```
+
 4. If you decide to host your repository on your own server
     1. Metadata JSON file should still follow [this interface](https://github.com/cloud-emoticon/store-repos/blob/master/linter/src/api/RepositoryMetadata.ts). Don't worry about TypeScript, the interface alone should be easy to follow. If you are still not sure, look at [this example](https://github.com/cloud-emoticon/store-repos/blob/master/remote-demo.meta.json)
+        1. Bonus: If your editor supports JSON schema, add the following line to aid you:
+
+        ```
+        "$schema": "https://github.com/cloud-emoticon/store-repos/raw/master/schema/RepositoryMetadata.json",
+        ```
+
 5. You can optinoally add an avatar for author of your repo to the branch. See exmaple in `a-land.meta.json`.
 6. Push the branch, create a merge request to this repo's master. There is a CI bot to check the integrity of the JSON files. Please assign the reviewer to `KTachibanaM`(me).
 7. Wait for review, merge, wait for about 5 minutes for your repository to appear in the store, and profit :P

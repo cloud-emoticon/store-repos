@@ -1,4 +1,5 @@
 {
+  "$schema": "https://github.com/cloud-emoticon/store-repos/raw/master/schema/JsonRepository.json",
   "categories": [
     {
       "name": "G+都亡了",

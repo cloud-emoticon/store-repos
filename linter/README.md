@@ -12,7 +12,7 @@ Linter for store repos
 yarn
 ```
 
-## Build
+## Build (Optional)
 
 ```bash
 yarn built-ts
@@ -22,4 +22,12 @@ yarn built-ts
 
 ```bash
 yarn run-linter
+```
+
+## Generate schemas
+
+If you make any changes to [src/api/](src/api/), run this script to generate new JSON schemas for emoticon authors.
+
+```bash
+yarn gen-schema
 ```
